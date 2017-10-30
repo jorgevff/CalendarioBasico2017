@@ -51,4 +51,37 @@ public class CalendarioBasico
 
         }
     }
+    /**
+     * permite devolver la fecha en el formato 01-10-20
+     */
+
+    public String devolverFecha()
+    {
+
+        String nuevoDia = "";
+        String nuevoMes = "";
+        String nuevoAnio = "";
+        if(dia < 10){
+            nuevoDia = "0" + dia;
+        }
+        else{
+            nuevoDia = "" + dia;
+        }
+
+        if(mes < 10){
+            nuevoMes = "0" + mes;
+        }
+        else{
+            nuevoMes = "" + mes;
+        }
+        if(anio < 10){
+            nuevoAnio = "0" + anio;
+        }
+        else{
+            nuevoAnio = "" + anio;
+        }
+        
+        return nuevoDia + "-" +  nuevoMes + "-" + nuevoAnio;
+    } 
+
 }
