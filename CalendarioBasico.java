@@ -22,4 +22,13 @@ public class CalendarioBasico
         anio = 1;
 
     }
+    /**
+     * fijamos la fecha nueva
+     */
+    public void setFecha(int nuevoDia, int nuevoMes, int nuevoAnio)
+    {
+        dia = nuevoDia;
+        mes = nuevoMes;
+        anio = nuevoAnio;
+    }
 }
