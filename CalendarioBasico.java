@@ -25,7 +25,7 @@ public class CalendarioBasico
     /**
      * fijamos la fecha nueva
      */
-    public void setFecha(int nuevoDia, int nuevoMes, int nuevoAnio)
+    public void fijarFecha(int nuevoDia, int nuevoMes, int nuevoAnio)
     {
         dia = nuevoDia;
         mes = nuevoMes;
@@ -34,7 +34,7 @@ public class CalendarioBasico
     /**
      * permite avanzar de fecha 
      */
-    public void avanzaFecha()
+    public void avanzarFecha()
     {
         dia += 1;
         if(dia > 30){
