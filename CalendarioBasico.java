@@ -44,8 +44,8 @@ public class CalendarioBasico
                 anio += 1;
                 mes = 1;
                 if(anio > 99){
-                    dia = 1;
-                    anio = 1;
+                    //dia = 1;
+                    anio = 0;
                 }
             }
 
@@ -55,12 +55,17 @@ public class CalendarioBasico
      * permite devolver la fecha en el formato 01-10-20
      */
 
-    public String devolverFecha()
+    public String obtenerFecha()
     {
 
         String nuevoDia = "";
         String nuevoMes = "";
         String nuevoAnio = "";
+        /**
+         * if(nuevoDia.lenght() < 2){
+         *     nuevoDia = "0" + nuevoDia;
+         *  }
+         */
         if(dia < 10){
             nuevoDia = "0" + dia;
         }
